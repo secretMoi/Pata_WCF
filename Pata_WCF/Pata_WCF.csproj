@@ -65,6 +65,28 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Database\Acces\AccesAchat.cs" />
+    <Compile Include="Database\Acces\AccesCategorieComposant.cs" />
+    <Compile Include="Database\Acces\AccesClients.cs" />
+    <Compile Include="Database\Acces\AccesCommandesAchat.cs" />
+    <Compile Include="Database\Acces\AccesCommandesVente.cs" />
+    <Compile Include="Database\Acces\AccesFournisseur.cs" />
+    <Compile Include="Database\Acces\AccesPc.cs" />
+    <Compile Include="Database\Acces\AccesStock.cs" />
+    <Compile Include="Database\Acces\AccesVente.cs" />
+    <Compile Include="Database\Acces\Base.cs" />
+    <Compile Include="Database\Classes\Achat.cs" />
+    <Compile Include="Database\Classes\Base.cs" />
+    <Compile Include="Database\Classes\CategorieComposant.cs" />
+    <Compile Include="Database\Classes\Client.cs" />
+    <Compile Include="Database\Classes\CommandesAchat.cs" />
+    <Compile Include="Database\Classes\CommandesVente.cs" />
+    <Compile Include="Database\Classes\Fournisseur.cs" />
+    <Compile Include="Database\Classes\Pc.cs" />
+    <Compile Include="Database\Classes\Stock.cs" />
+    <Compile Include="Database\Classes\Vente.cs" />
+    <Compile Include="Database\Gestions\Gestion.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>

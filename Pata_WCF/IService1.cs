@@ -1,5 +1,7 @@
-﻿using System.Runtime.Serialization;
+﻿using System;
+using System.Runtime.Serialization;
 using System.ServiceModel;
+using Pata_WCF.Database.Classes;
 
 namespace Pata_WCF
 {
@@ -18,10 +20,36 @@ namespace Pata_WCF
 		bool VerifierIsbn13(string isbn);
 
 		[OperationContract]
+		bool VerifierIban(string iban);
+
+		[OperationContract]
+		Client GetClient(int id);
+
+		[OperationContract]
 		CompositeType GetDataUsingDataContract(CompositeType composite);
 
 		// TODO: ajoutez vos opérations de service ici
 	}
+
+	/*[DataContract]
+	public class Client
+	{
+		// données
+		[DataMember]
+		public int Id { get; set; }
+
+		[DataMember]
+		public string Nom { get; set; }
+
+		[DataMember]
+		public string Prenom { get; set; }
+
+		[DataMember]
+		public DateTime Naissance { get; set; }
+
+		[DataMember]
+		public string Mail { get; set; }
+	}*/
 
 
 	// Utilisez un contrat de données comme indiqué dans l'exemple ci-après pour ajouter les types composites aux opérations de service.
